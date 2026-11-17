@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,24 +9,27 @@
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
         <h1>College Event Management</h1>
         <p>Discover, Participate and Celebrate!</p>
     </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#events">Events</a>
-        <a href="#register">Register</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
-    </nav>
+    <!-- Navigation Bar -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+</nav>
 
+    <!-- Home Section -->
     <section id="home">
         <h2>Welcome to Our College Events</h2>
         <p>Explore exciting events happening at our college.</p>
     </section>
 
+    <!-- Upcoming Events Section -->
     <section id="events">
         <h2>Upcoming Events</h2>
 
@@ -40,21 +44,36 @@
             <p>Date: 25 December 2026</p>
             <p>Enjoy music, dance and cultural activities.</p>
         </div>
+
     </section>
 
-    <!-- Event Registration Feature -->
+    <!-- Student Event Registration Feature -->
     <section id="register">
         <h2>Register for an Event</h2>
+        <p>Fill in your details to participate in college events.</p>
+
         <div class="registration-container">
+
             <form id="registrationForm">
+
                 <div class="form-group">
                     <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        required>
                 </div>
+
                 <div class="form-group">
                     <label for="rollNumber">Roll Number / Student ID</label>
-                    <input type="text" id="rollNumber" placeholder="e.g. CS2026-042" required>
+                    <input
+                        type="text"
+                        id="rollNumber"
+                        placeholder="Enter your roll number"
+                        required>
                 </div>
+
                 <div class="form-group">
                     <label for="department">Department</label>
                     <select id="department" required>
@@ -65,63 +84,86 @@
                         <option value="Mechanical Engineering">Mechanical Engineering</option>
                     </select>
                 </div>
+
                 <div class="form-group">
                     <label for="eventChoice">Select Event</label>
                     <select id="eventChoice" required>
-                        <option value="Tech Fest 2026">Tech Fest 2026 (20 Dec 2026)</option>
-                        <option value="Annual Cultural Fest">Annual Cultural Fest (25 Dec 2026)</option>
-                        <option value="Coding Hackathon">Coding Hackathon (28 Dec 2026)</option>
+                        <option value="">Choose an Event</option>
+                        <option value="Tech Fest 2026">Tech Fest 2026</option>
+                        <option value="Annual Cultural Fest">Annual Cultural Fest</option>
+                        <option value="Coding Hackathon">Coding Hackathon</option>
                     </select>
                 </div>
-                <button type="submit" class="submit-btn">Submit Registration</button>
+
+                <button type="submit" class="submit-btn">
+                    Submit Registration
+                </button>
+
             </form>
+
+            <!-- Registration Confirmation -->
             <div id="confirmationMessage" class="alert-box" style="display:none;">
-                🎉 Registration submitted successfully! Check your college email for pass.
+                🎉 Registration submitted successfully!
+                Thank you for registering.
             </div>
+
         </div>
     </section>
 
-    <!-- Event Gallery Feature -->
-    <section id="gallery">
-        <h2>Event Gallery & Memories</h2>
-        <p class="gallery-subtitle">Relive the finest moments from our past college fests</p>
-        <div class="gallery-grid">
-            <div class="gallery-card">
-                <div class="gallery-thumb">🏆</div>
-                <h3>Hackathon 2025 Grand Finale</h3>
-                <p>36 hours of non-stop code, innovation and teamwork.</p>
-                <span class="badge">Tech</span>
-            </div>
-            <div class="gallery-card">
-                <div class="gallery-thumb">🎸</div>
-                <h3>Battle of the Bands</h3>
-                <p>Mesmerizing musical night with top college rock bands.</p>
-                <span class="badge">Cultural</span>
-            </div>
-            <div class="gallery-card">
-                <div class="gallery-thumb">🤖</div>
-                <h3>RoboWars Championship</h3>
-                <p>Combat robots clashing for the ultimate college trophy.</p>
-                <span class="badge">Robotics</span>
-            </div>
-            <div class="gallery-card">
-                <div class="gallery-thumb">⚽</div>
-                <h3>Inter-College Sports Meet</h3>
-                <p>Celebrating athletic spirit, resilience and sportsmanship.</p>
-                <span class="badge">Sports</span>
-            </div>
-        </div>
-    </section>
+<!-- Event Gallery Feature -->
+<section id="gallery">
+    <h2>Event Gallery & Memories</h2>
+    <p>Relive the finest moments from our past college events.</p>
 
+    <div class="gallery-grid">
+
+        <div class="gallery-card">
+            <div class="gallery-thumb">🏆</div>
+            <h3>Hackathon 2025</h3>
+            <p>36 hours of coding, innovation and teamwork.</p>
+            <span class="badge">Technology</span>
+        </div>
+
+        <div class="gallery-card">
+            <div class="gallery-thumb">🎸</div>
+            <h3>Battle of the Bands</h3>
+            <p>An amazing musical night with college bands.</p>
+            <span class="badge">Cultural</span>
+        </div>
+
+        <div class="gallery-card">
+            <div class="gallery-thumb">🤖</div>
+            <h3>RoboWars Championship</h3>
+            <p>Robots competing for the ultimate trophy.</p>
+            <span class="badge">Robotics</span>
+        </div>
+
+        <div class="gallery-card">
+            <div class="gallery-thumb">⚽</div>
+            <h3>Sports Meet</h3>
+            <p>Celebrating sportsmanship and teamwork.</p>
+            <span class="badge">Sports</span>
+        </div>
+
+    </div>
+</section>
+
+    <!-- About Section -->
     <section id="about">
         <h2>About Us</h2>
-        <p>Our platform helps students discover college events.</p>
+        <p>
+            Our College Event Management System helps students
+            discover upcoming events and register for activities
+            organized by the college.
+        </p>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>© 2026 College Event Management System</p>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
